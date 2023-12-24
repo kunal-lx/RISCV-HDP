@@ -68,4 +68,11 @@ Solution 2.
 
 ![Alt Text](1E.png)
 
+![Alt Text](1B.png)
+
+__________________________________________
+Solution 3.
+
 ![Alt Text](1A.png)
+
+![Alt Text](1D.png)
