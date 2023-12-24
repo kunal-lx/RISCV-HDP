@@ -77,8 +77,9 @@ __________________________________________
 Solution 3.
 
 4-bit ALU code in Verilog
-![Alt Text](1A.png)
-
 Output:
 
+![Alt Text](1A.png)
+
+Faced an error on MacOS 14:
 ![Alt Text](1D.png)
