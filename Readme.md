@@ -1,5 +1,5 @@
-RISC-V Hardware Design Program
-RISC-V Skilling Program Repository
+#RISC-V Hardware Design Program
+
 
 WEEK 1: 🚀 Introduction to RISC-V ISA
 Embark on a journey through the fascinating world of RISC-V, unraveling its rich history, significance, and intricate architecture. Week one lays the foundation with a deep dive into RV32I basics, complemented by hands-on experience using Verilog simulation tools.
