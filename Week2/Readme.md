@@ -78,18 +78,6 @@ Solution 3.
 
 4-bit ALU code in Verilog
 
-Inputs:
-
-A: 4-bit input A
-
-B: 4-bit input B
-
-OP: 3-bit control input for operation selection
-
-
-Output:
-
-Result: 4-bit output
 
 Operations:
 
