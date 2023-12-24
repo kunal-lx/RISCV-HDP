@@ -63,6 +63,9 @@ Addition of 36 and -12:
 Final Result:
 - -12 = 11110100
 
+__________________________________________
+Solution 2.
 
+![Alt Text](1E.png)
 
-![Alt Text](a.png)
+![Alt Text](1A.png)
