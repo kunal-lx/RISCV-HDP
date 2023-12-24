@@ -12,19 +12,19 @@ Decimal Representation:
 - 19 = 00010011
 
 1s Complement of 19:
-- 1s_complement(19) = 11101100
+- 1s complement(19) = 11101100
 
 2s Complement of 19:
-- 2s_complement(19) = 11101101
+- 2s complement(19) = 11101101
 
 Addition of 10 and -19:
 - 10 + (-19) = 11110111
 
 1s Complement of the Result:
-- 1s_complement(11110111) = 00001000
+- 1s complement(11110111) = 00001000
 
 2s Complement of the Result:
-- 2s_complement(11110111) = 00001001
+- 2s complement(11110111) = 00001001
 
 Final Result:
 - -9 = 00001001
@@ -52,10 +52,10 @@ Decimal Representation:
 - 12 = 00001100
 
 1s Complement of 12:
-- 1s_complement(12) = 11110011
+- 1s complement(12) = 11110011
 
 2s Complement of 12:
-- 2s_complement(12) = 11110100
+- 2s complement(12) = 11110100
 
 Addition of 36 and -12:
 - 36 + (-12) = 11110100
@@ -70,6 +70,7 @@ Solution 2.
 ![Alt Text](1E.png)
 
 Result:
+
 ![Alt Text](1B.png)
 
 __________________________________________
@@ -79,4 +80,5 @@ Solution 3.
 ![Alt Text](1A.png)
 
 Output:
+
 ![Alt Text](1D.png)
