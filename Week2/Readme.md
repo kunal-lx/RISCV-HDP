@@ -82,4 +82,6 @@ Output:
 ![Alt Text](1A.png)
 
 Faced an error on MacOS 14:
+
+
 ![Alt Text](1D.png)
