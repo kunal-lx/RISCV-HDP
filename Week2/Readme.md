@@ -1,0 +1,69 @@
+Task Given-
+
+Q1.Calculate - 10-19 , 20+30 , 36-12 in signed, 1s and 2s complement. 
+
+Q2.Design an 4-bit ALU in c code and verify it using gcc.
+
+Q3.Design the same 4-bit ALU code in verilog and verify it using iverilog and gtkwave. 
+
+__________________________________________
+
+Calculation: 10 - 19 (base 10)
+
+Decimal Representation:
+- 10 = 00001010
+- 19 = 00010011
+
+1s Complement of 19:
+- 1s_complement(19) = 11101100
+
+2s Complement of 19:
+- 2s_complement(19) = 11101101
+
+Addition of 10 and -19:
+- 10 + (-19) = 11110111
+
+1s Complement of the Result:
+- 1s_complement(11110111) = 00001000
+
+2s Complement of the Result:
+- 2s_complement(11110111) = 00001001
+
+Final Result:
+- -9 = 00001001
+
+---
+
+Calculation: 20 + 30 (base 10)
+
+Decimal Representation:
+- 20 = 00010100
+- 30 = 00011110
+
+Addition of 20 and 30:
+- 20 + 30 = 00110010
+
+Final Result:
+- 50 = 00110010
+
+---
+
+Calculation: 36 - 12 
+
+Decimal Representation:
+- 36 = 00100100
+- 12 = 00001100
+
+1s Complement of 12:
+- 1s_complement(12) = 11110011
+
+2s Complement of 12:
+- 2s_complement(12) = 11110100
+
+Addition of 36 and -12:
+- 36 + (-12) = 11110100
+
+Final Result:
+- -12 = 11110100
+
+![Alt Text](a.png)
