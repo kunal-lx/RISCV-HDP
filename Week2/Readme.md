@@ -79,20 +79,32 @@ Solution 3.
 4-bit ALU code in Verilog
 
 Inputs:
+
 A: 4-bit input A
+
 B: 4-bit input B
+
 OP: 3-bit control input for operation selection
 
+
 Output:
+
 Result: 4-bit output
 
 Operations:
+
 OP values determine the operation performed:
+
 OP = 3'b000: Addition (Result = A + B)
+
 OP = 3'b001: Subtraction (Result = A - B)
+
 OP = 3'b010: Bitwise AND (Result = A & B)
+
 OP = 3'b011: Bitwise OR (Result = A | B)
+
 OP = 3'b100: Bitwise XOR (Result = A ^ B)
+
 Default: Result is set to 4'b0000 for other OP values.
 
 
