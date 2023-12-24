@@ -1,13 +1,10 @@
 Task Given-
 
-Q1.Calculate - 10-19 , 20+30 , 36-12 in signed, 1s and 2s complement. 
-
-Q2.Design an 4-bit ALU in c code and verify it using gcc.
-
-Q3.Design the same 4-bit ALU code in verilog and verify it using iverilog and gtkwave. 
+![Alt Text](1C.png) 
 
 __________________________________________
 
+Solution 1.
 Calculation: 10 - 19 (base 10)
 
 Decimal Representation:
@@ -65,5 +62,7 @@ Addition of 36 and -12:
 
 Final Result:
 - -12 = 11110100
+
+
 
 ![Alt Text](a.png)
