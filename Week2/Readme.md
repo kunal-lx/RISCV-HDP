@@ -1,4 +1,4 @@
-Task Given-
+
 
 ![Alt Text](1C.png) 
 
@@ -66,8 +66,10 @@ Final Result:
 __________________________________________
 Solution 2.
 
+4-bit ALU:
 ![Alt Text](1E.png)
 
+Result:
 ![Alt Text](1B.png)
 
 __________________________________________
