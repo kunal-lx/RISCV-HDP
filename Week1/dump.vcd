@@ -1,0 +1,76 @@
+$date
+	Sun Dec 24 19:27:38 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var reg 4 ! A_init [3:0] $end
+$var reg 4 " B_init [3:0] $end
+$var reg 3 # OP_init [2:0] $end
+$var reg 1 $ clk $end
+$scope module uut $end
+$var wire 4 % A [3:0] $end
+$var wire 4 & B [3:0] $end
+$var wire 3 ' OP [2:0] $end
+$var reg 4 ( Result [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b111 (
+b0 '
+b101 &
+b10 %
+0$
+b0 #
+b101 "
+b10 !
+$end
+#5
+1$
+#10
+b11 (
+0$
+b1 #
+b1 '
+b10 "
+b10 &
+b101 !
+b101 %
+#15
+1$
+#20
+b1000 (
+0$
+b10 #
+b10 '
+b1010 "
+b1010 &
+b1100 !
+b1100 %
+#25
+1$
+#30
+b1110 (
+0$
+b11 #
+b11 '
+#35
+1$
+#40
+b110 (
+0$
+b100 #
+b100 '
+#45
+1$
+#50
+0$
