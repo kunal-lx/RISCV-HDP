@@ -9,9 +9,15 @@ int ALU(int a, int b, char operation) {
         case '*':
             return a * b;
         case '/':
-            return a / b;
+            if (b != 0) {
+                return a / b;
+            } else {
+                printf("Error: Division by zero\n");
+                return 0;  // You might want to handle this differently based on your requirements
+            }
         default:
-            return 0;  
+            printf("Error: Undefined operation\n");
+            return 0;
     }
 }
 
