@@ -1,3 +1,8 @@
+
+
+![Alt Text](Assign.png) 
+
+
 # Temperature-Activated Fire Alarm System
 
 This project implements a simple temperature-activated fire alarm system using a custom RISC-V processor with I/O-mapped GPIO. The system reads temperature data from a sensor and activates an alarm (LED and buzzer) when the temperature exceeds a predefined threshold.
