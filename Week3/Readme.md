@@ -1,6 +1,6 @@
 
 
-![Alt Text](Assign.png) 
+![Alt Text](1B.png) 
 
 
 # Temperature-Activated Fire Alarm System
@@ -146,3 +146,8 @@ update_registers:
     j while_loop
 
 ```
+
+
+
+![Alt Text](1A.png) 
+
