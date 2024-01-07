@@ -86,7 +86,7 @@ int main() {
 
 Assembly Code:
 
-```
+```a
 .section .data
 flag: .word 0
 flame: .word 0
