@@ -24,15 +24,14 @@ C Code:
 #include <stdlib.h>
 
 int main() {
-    int flag;   // Replace with GPIO pin connected to switch pin
-    int flame;  // Replace with the GPIO pin connected to sensor's digital out pin
-    int buzzer = 0; // Replace with the GPIO pin connected to the buzzer
+    int flag;
+    int flame;
+    int buzzer = 0;
     int buzzer_reg = buzzer * 4;
-    int led = 0; // Replace with GPIO pin connected to the LED
+    int led = 0;
     int led_reg = led * 8;
     int mask = 0xFFFFFFF3;
 
-    // Initialize GPIO configuration
     asm volatile(
         "and x30, x30, %2\n\t"
         "or x30, x30, %0\n\t"
@@ -43,7 +42,6 @@ int main() {
     );
 
     while (1) {
-        // Read the state of the switch
         asm volatile(
             "andi %0, x30, 1\n\t"
             : "=r"(flag)
@@ -52,7 +50,6 @@ int main() {
         );
 
         if (flag) {
-            // Read the state of the flame sensor
             asm volatile(
                 "andi %0, x30, 2\n\t"
                 : "=r"(flame)
@@ -61,16 +58,13 @@ int main() {
             );
 
             if (flame == 0) {
-                // Turn on buzzer and LED
                 buzzer = 1;
                 led = 1;
             } else {
-                // Turn off buzzer and LED
                 buzzer = 0;
                 led = 0;
             }
 
-            // Update register values
             buzzer_reg = buzzer * 4;
             led_reg = led * 8;
 
@@ -90,7 +84,7 @@ int main() {
 
 
 
-```assembly
+```Assembly Code
 .section .data
 flag: .word 0
 flame: .word 0
