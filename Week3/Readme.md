@@ -90,7 +90,7 @@ int main() {
 
 
 
-Assembly code :
+```assembly
 .section .data
 flag: .word 0
 flame: .word 0
@@ -142,3 +142,4 @@ update_registers:
     or x30, x30, led_reg
 
     j while_loop
+
