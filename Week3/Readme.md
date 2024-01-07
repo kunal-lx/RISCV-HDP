@@ -93,14 +93,7 @@ int main() {
 Assembly Code:
 
 ```a
-.section .data
-flag: .word 0
-flame: .word 0
-buzzer: .word 0
-buzzer_reg: .word 0
-led: .word 0
-led_reg: .word 0
-mask: .word 0xFFFFFFF3
+
 
 .section .text
 .globl _start
