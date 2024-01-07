@@ -82,6 +82,7 @@ int main() {
 
     return 0;
 }
+```
 
 
 Assembly Code:
@@ -139,3 +140,4 @@ update_registers:
 
     j while_loop
 
+```
