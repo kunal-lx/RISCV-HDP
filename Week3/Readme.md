@@ -18,8 +18,9 @@ The main C code (`main.c`) continuously reads the temperature from the sensor an
 
    riscv32-unknown-elf-gcc -O0 -ggdb -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tmain.ld main.c -o main.elf
 
-C Code:
+C code:
 
+```
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -83,8 +84,9 @@ int main() {
 }
 
 
+Assembly Code:
 
-```Assembly Code
+```
 .section .data
 flag: .word 0
 flame: .word 0
