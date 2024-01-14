@@ -149,3 +149,9 @@ Design:
 
 ![Alt Text](1A.png) 
 
+Functional Simulation:
+
+For the given functionality, when the flag is set (flag = 1) and the flame sensor detects no fire (flame = 0), the expected behavior is to activate both the LED and the buzzer. In binary terms, this corresponds to the input combination 01 resulting in the output 11. Specifically, when the flag is high and the flame sensor indicates the absence of fire, the LED and buzzer are turned on.
+
+
+![Alt Text](1C.png) 
