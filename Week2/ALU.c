@@ -22,13 +22,22 @@ int ALU(int a, int b, char operation) {
 }
 
 int main() {
-    int operand1 = 10;
-    int operand2 = 5;
+    int operand1, operand2;
+    char operation;
 
-    char operation = '+';
+    printf("Enter operand1: ");
+    scanf("%d", &operand1);
+
+    printf("Enter operand2: ");
+    scanf("%d", &operand2);
+
+    printf("Enter operation (+, -, *, /): ");
+    scanf(" %c", &operation);  // Note the space before %c to consume any whitespace characters
+
     int result = ALU(operand1, operand2, operation);
 
     printf("ALU Result: %d\n", result);
 
     return 0;
 }
+

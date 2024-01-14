@@ -94,3 +94,8 @@ In this case, the IdealRV is 0.4 times slower, or the PicoRV32 is 2.5 times fast
 
 This analysis provides insights into the relative performance of different RISC-V CPUs for the specific code under consideration and varying clock speeds.
 
+
+ALU:
+
+
+![Alt Text](1B.png) 
