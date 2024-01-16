@@ -102,44 +102,45 @@ Assembly Code:
 .globl _start
 _start:
     and x30, x30, mask
-    or x30, x30, buzzer_reg
-    or x30, x30, led_reg
+    or  x30, x30, buzzer_reg
+    or  x30, x30, led_reg
 
 while_loop:
     andi t0, x30, 1
-    sw t0, flag
+    sw   t0, flag
     bnez t0, if_block
-    j while_loop
+    j    while_loop
 
 if_block:
     andi t1, x30, 2
-    sw t1, flame
+    sw   t1, flame
     beqz t1, else_block
 
-    li t2, 0
-    sw t2, buzzer
-    sw t2, led
-    j update_registers
+    li   t2, 0
+    sw   t2, buzzer
+    sw   t2, led
+    j    update_registers
 
 else_block:
-    li t3, 1
-    sw t3, buzzer
-    sw t3, led
+    li   t3, 1
+    sw   t3, buzzer
+    sw   t3, led
+    j    update_registers
 
 update_registers:
-    lw t4, buzzer
+    lw   t4, buzzer
     slli t4, t4, 2
-    sw t4, buzzer_reg
+    sw   t4, buzzer_reg
 
-    lw t5, led
+    lw   t5, led
     slli t5, t5, 3
-    sw t5, led_reg
+    sw   t5, led_reg
 
-    and x30, x30, mask
-    or x30, x30, buzzer_reg
-    or x30, x30, led_reg
+    and  x30, x30, mask
+    or   x30, x30, buzzer_reg
+    or   x30, x30, led_reg
 
-    j while_loop
+    j    while_loop
 
 ```
 
