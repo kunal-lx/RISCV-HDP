@@ -100,30 +100,30 @@ NOTE : RTLIL of sky130 sram cell should be generated as it is not part of module
 ```
 read_verilog gpio_syn.v
 ```
-\\\![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/cb569ac4-363c-4555-91bc-595371c80118)
+
 
 -- Synthesis of top module (wrapper)
 ```
 synth -top wrapper
 ```
-\\\![Screenshot 2024-01-28 000756](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/62219721-2b8f-4670-ae95-5334ca2d6804)
+
 
 -- Mapping yosys standard cell to sky130 lib logic cells
 ```
 abc -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib
 ```
-\\\![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/36fa5ee3-4074-4840-a09f-12065d25bfd4)
+
 
 -- Mapping sky130 lib flip-flop cells
 ```
 dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib
 ```
-\\\![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/edd62d16-149f-4d3a-b033-a34c2b19e4c0)
 
 
 # Functional Verification
 
 ![Alt Text](1A.jpeg)
+Validates that the synthesized netlist behaves correctly and consistently with the original RTL description.
 
 
 
