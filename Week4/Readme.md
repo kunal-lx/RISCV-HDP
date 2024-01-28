@@ -121,6 +121,8 @@ abc -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib
 dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib
 ```
 
+<img src="1D.png" alt="Alt Text" width="700">
+
 
 # GTKWave Simulations
 
