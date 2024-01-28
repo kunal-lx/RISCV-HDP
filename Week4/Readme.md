@@ -1,5 +1,7 @@
 # Sky130 RTL Synthesis for RISC-V 
 
+![Alt Text](1C.png)
+
 ## Overview:
 
 This repository provides an overview of the synthesis process for RTL (Register-Transfer Level) code using the SkyWater 130nm (Sky130) process and the Yosys tool for RISC-V designs.
@@ -75,7 +77,7 @@ This guide explains how to install Yosys on the VSDWorkshop VM. Note that Yosys 
 
 To verify if Yosys is installed, you can open a terminal on the VSDWorkshop VM and run the following command:
 
-```bash
+```
 yosys -h
 
 ```
