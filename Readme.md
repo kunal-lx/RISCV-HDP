@@ -40,6 +40,8 @@ I utilized the Chipcron tool to generate RISC-V Verilog code and its correspondi
 ![Alt Text](Chip.png)
 ![Alt Text](Chip.png | width=100)
 
+<img src="Chip.png" alt="Alt Text" width="100">
+
 ## Acknowledgement
 
 Kunal Ghosh, VSD Corp. Pvt. Ltd.
