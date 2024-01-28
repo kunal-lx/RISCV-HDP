@@ -3,9 +3,9 @@
 ![Alt Text](1B.png) 
 
 
-# Temperature-Activated Fire Alarm System
+# Temperature-Activated Motor Sprinkler System
 
-This project implements a simple temperature-activated fire alarm system using a custom RISC-V processor with I/O-mapped GPIO. The system reads temperature data from a sensor and activates an alarm (LED and buzzer) when the temperature exceeds a predefined threshold.
+This project implements a simple temperature-activated motor pump system using a custom RISC-V processor with I/O-mapped GPIO. The system reads temperature data from a sensor and activates an motor (LED and pump) when the temperature exceeds a predefined threshold.
 
 ## Hardware Setup
 
@@ -24,10 +24,6 @@ The main C code (`main.c`) continuously reads the temperature from the sensor an
    riscv32-unknown-elf-gcc -O0 -ggdb -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tmain.ld main.c -o main.elf
 
 
-Design:
-
-
-![Alt Text](1A.png)
 
 
 
@@ -40,8 +36,8 @@ C code:
 int main() {
     int flag;
     int flame;
-    int buzzer = 0;
-    int buzzer_reg = buzzer * 4;
+    int motor = 0;
+    int motor_reg = motor * 4;
     int led = 0;
     int led_reg = led * 8;
     int mask = 0xFFFFFFF3;
@@ -51,7 +47,7 @@ int main() {
         "or x30, x30, %0\n\t"
         "or x30, x30, %1\n\t"
         :
-        : "r"(buzzer_reg), "r"(led_reg), "r"(mask)
+        : "r"(motor_reg), "r"(led_reg), "r"(mask)
         : "x30"
     );
 
@@ -72,14 +68,14 @@ int main() {
             );
 
             if (flame == 0) {
-                buzzer = 1;
+                motor = 1;
                 led = 1;
             } else {
-                buzzer = 0;
+                motor = 0;
                 led = 0;
             }
 
-            buzzer_reg = buzzer * 4;
+            motor_reg = motor * 4;
             led_reg = led * 8;
 
             asm volatile(
@@ -87,7 +83,7 @@ int main() {
                 "or x30, x30, %0\n\t"
                 "or x30, x30, %1\n\t"
                 :
-                : "r"(buzzer_reg), "r"(led_reg), "r"(mask)
+                : "r"(motor_reg), "r"(led_reg), "r"(mask)
                 : "x30"
             );
         }
@@ -104,9 +100,6 @@ Assembly Code:
 
 ```a
 
-
-
-out:     file format elf32-littleriscv
 
 
 Disassembly of section .text:
