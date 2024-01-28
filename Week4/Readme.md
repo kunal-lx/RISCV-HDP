@@ -120,12 +120,33 @@ dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib
 ```
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/edd62d16-149f-4d3a-b033-a34c2b19e4c0)
 
--- Synthesis dumping output
-```
-write_verilog synth_gpio.v
-```
--- Generating Graphviz representation of design
+
+# GLS (Gate Level Simulation) in Digital Design
+
+GLS, which stands for "Gate Level Simulation," is a crucial step in digital design and verification. It involves simulating the behavior of the synthesized netlist, which is the gate-level representation of a design. This simulation is essential for ensuring that the logical functionality of the gate-level design aligns with the intended behavior described in the RTL (Register Transfer Level) design.
+
+## Purpose of GLS:
+
+Gate Level Simulation serves several key purposes in the digital design flow:
+
+1. **Functional Verification:**
+   - Validates that the synthesized netlist behaves correctly and consistently with the original RTL description.
+   - Confirms that the logic gates and flip-flops in the gate-level netlist accurately represent the intended functionality.
+
+2. **Timing Analysis:**
+   - Evaluates and analyzes the timing characteristics of the design at the gate level.
+   - Identifies and addresses any potential timing issues, ensuring that the design meets performance requirements.
+
+3. **Power Analysis:**
+   - Estimates power consumption based on the gate-level activities during simulation.
+   - Helps optimize power usage for the design.
+
+## Commands for Netlist Generation (Logic Synthesis):
 ```
 show wrapper
+
 ```
-![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/68fbbf48-24b7-46ec-90e2-dacb437e4068)
+
+
+
+
