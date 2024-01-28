@@ -65,3 +65,67 @@ This repository provides an overview of the synthesis process for RTL (Register-
 
 - Follow the step-by-step instructions provided in the documentation.
 
+
+
+# Installing Yosys on the VSDWorkshop VM
+
+## Overview:
+
+This guide explains how to install Yosys on the VSDWorkshop VM. Note that Yosys is pre-installed on the VSDWorkshop VM, so you don't need to perform any additional installations.
+
+To verify if Yosys is installed, you can open a terminal on the VSDWorkshop VM and run the following command:
+
+```bash
+yosys -h
+
+
+
+## Gate Level Synthesis - GLS
+-- Comment out the data & instruction memory modules in processor.v and ensure writing_inst_done=1 for uart verification OR writing_inst_done=0 to bypass uart for simulation.\
+-- All required ```sky130``` libs are kept in the current working directory, and proper instantiation name is used for **SRAM** from sky130 libs.\
+
+### Use the following yosys commands to synthesize gate-level netlist
+```
+yosys
+```
+--  make sure you have latest version of yosys 
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/91d27273-68d3-435e-8872-c7faede5b003)
+
+-- Read liberty file to import sky130 cells
+```
+read_liberty -lib sky130_fd_sc_hd__tt_025C_1v80_256.lib
+```
+-- Read your verilog file and generate RTLIL\
+NOTE : RTLIL of sky130 sram cell should be generated as it is not part of module design.
+```
+read_verilog gpio_syn.v
+```
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/cb569ac4-363c-4555-91bc-595371c80118)
+
+-- Synthesis of top module (wrapper)
+```
+synth -top wrapper
+```
+![Screenshot 2024-01-28 000756](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/62219721-2b8f-4670-ae95-5334ca2d6804)
+
+-- Mapping yosys standard cell to sky130 lib logic cells
+```
+abc -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib
+```
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/36fa5ee3-4074-4840-a09f-12065d25bfd4)
+
+-- Mapping sky130 lib flip-flop cells
+```
+dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib
+```
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/edd62d16-149f-4d3a-b033-a34c2b19e4c0)
+
+-- Synthesis dumping output
+```
+write_verilog synth_gpio.v
+```
+-- Generating Graphviz representation of design
+```
+show wrapper
+```
+![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/68fbbf48-24b7-46ec-90e2-dacb437e4068)
