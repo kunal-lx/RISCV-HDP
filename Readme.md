@@ -37,7 +37,8 @@ This repository is your gateway to mastering RISC-V. Dive into each week's mater
 
 I utilized the Chipcron tool to generate RISC-V Verilog code and its corresponding testbench. The generated Verilog code incorporates specific assembly instructions, making it sufficiently capable to run on an FPGA and facilitating fabrication as an ASIC chip.
 
-![Alt Text](Chip.png) 
+![Alt Text](Chip.png)
+![Alt Text](Chip.png | width=100)
 
 ## Acknowledgement
 
