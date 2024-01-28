@@ -145,6 +145,7 @@ Spike Output:
 
 
  
+```a
 
 Number of different instructions: 10
 
@@ -161,4 +162,8 @@ List of unique instructions:
 8)  j
 9)  mv 
 10) ori
+
+
+
+```
 
