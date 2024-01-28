@@ -78,7 +78,7 @@ To verify if Yosys is installed, you can open a terminal on the VSDWorkshop VM a
 ```bash
 yosys -h
 
-
+```
 
 ## Gate Level Synthesis - GLS
 -- Comment out the data & instruction memory modules in processor.v and ensure writing_inst_done=1 for uart verification OR writing_inst_done=0 to bypass uart for simulation.\
