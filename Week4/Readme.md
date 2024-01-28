@@ -1,6 +1,6 @@
 # Sky130 RTL Synthesis for RISC-V 
 
-![Alt Text](1C.png)
+<img src="1C.png" alt="Alt Text" width="500">
 
 ## Overview:
 
