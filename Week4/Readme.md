@@ -121,6 +121,12 @@ dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib
 ![image](https://github.com/AbrarShaikh/RISC-V-Design/assets/34272376/edd62d16-149f-4d3a-b033-a34c2b19e4c0)
 
 
+# Functional Verification
+
+![Alt Text](1A.png)
+
+
+
 # GLS (Gate Level Simulation) in Digital Design
 
 GLS, which stands for "Gate Level Simulation," is a crucial step in digital design and verification. It involves simulating the behavior of the synthesized netlist, which is the gate-level representation of a design. This simulation is essential for ensuring that the logical functionality of the gate-level design aligns with the intended behavior described in the RTL (Register Transfer Level) design.
@@ -148,5 +154,5 @@ show wrapper
 ```
 
 
-
+![Alt Text](1B.png) 
 
