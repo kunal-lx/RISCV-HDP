@@ -5,7 +5,7 @@
 
 # Temperature-Activated Motor Sprinkler System
 
-![Alt Text](1E.png)
+<img src="1E.png" alt="Alt Text" width="800">
 
 This project implements a simple temperature-activated motor pump system using a custom RISC-V processor with I/O-mapped GPIO. The system reads temperature data from a sensor and activates an motor (LED and pump) when the temperature exceeds a predefined threshold.
 
