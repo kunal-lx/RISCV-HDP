@@ -148,6 +148,9 @@ Gate Level Simulation serves several key purposes in the digital design flow:
    - Helps optimize power usage for the design.
 
 ## Commands for Netlist Generation (Logic Synthesis):
+
+If you want to show the wrapper in Yosys, you can use the following command
+
 ```
 show wrapper
 
