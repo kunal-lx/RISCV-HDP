@@ -35,3 +35,9 @@ Week six elevates your expertise with advanced simulation concepts and methodolo
 This repository is your gateway to mastering RISC-V. Dive into each week's materials, contribute to the community, and sharpen your skills in this exciting realm of processor architecture. Happy coding! 🚀🔧
 
 
+
+
+## Acknowledgement
+
+Kunal Ghosh, VSD Corp. Pvt. Ltd.
+Mayank Kabra, Founder Chipcron Pvt.Ltd
