@@ -120,7 +120,7 @@ dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib
 ```
 
 
-# Functional Verification
+# GTKWave Simulations
 
 ![Alt Text](1A.jpeg)
 Validates that the synthesized netlist behaves correctly and consistently with the original RTL description.
@@ -152,7 +152,6 @@ Gate Level Simulation serves several key purposes in the digital design flow:
 show wrapper
 
 ```
-
 
 ![Alt Text](1B.png) 
 
