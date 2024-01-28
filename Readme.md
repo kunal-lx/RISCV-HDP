@@ -1,5 +1,11 @@
 ## RISC-V Hardware Design Program
 
+<img src="Chip.png" alt="Alt Text" width="100">
+
+
+> I utilized the Chipcron tool to generate RISC-V Verilog code and its corresponding testbench. The generated Verilog code incorporates specific assembly instructions, making it sufficiently capable to run on an FPGA and facilitating fabrication as an ASIC chip.
+
+
 
 WEEK 1: 🚀 Introduction to RISC-V ISA
 Embark on a journey through the fascinating world of RISC-V, unraveling its rich history, significance, and intricate architecture. Week one lays the foundation with a deep dive into RV32I basics, complemented by hands-on experience using Verilog simulation tools.
@@ -33,14 +39,6 @@ Week six elevates your expertise with advanced simulation concepts and methodolo
 
 🌐 Explore, Learn, Contribute!
 This repository is your gateway to mastering RISC-V. Dive into each week's materials, contribute to the community, and sharpen your skills in this exciting realm of processor architecture. Happy coding! 🚀🔧
-
-
-
-<img src="Chip.png" alt="Alt Text" width="100">
-
-
-> I utilized the Chipcron tool to generate RISC-V Verilog code and its corresponding testbench. The generated Verilog code incorporates specific assembly instructions, making it sufficiently capable to run on an FPGA and facilitating fabrication as an ASIC chip.
-
 
 
 
