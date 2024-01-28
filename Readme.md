@@ -35,7 +35,7 @@ Week six elevates your expertise with advanced simulation concepts and methodolo
 This repository is your gateway to mastering RISC-V. Dive into each week's materials, contribute to the community, and sharpen your skills in this exciting realm of processor architecture. Happy coding! 🚀🔧
 
 
- **  I utilized the Chipcron tool to generate RISC-V Verilog code and its corresponding testbench. The generated Verilog code incorporates specific assembly instructions, making it sufficiently capable to run on an FPGA and facilitating fabrication as an ASIC chip.
+ *  I utilized the Chipcron tool to generate RISC-V Verilog code and its corresponding testbench. The generated Verilog code incorporates specific assembly instructions, making it sufficiently capable to run on an FPGA and facilitating fabrication as an ASIC chip.
 
 
 <img src="Chip.png" alt="Alt Text" width="100">
