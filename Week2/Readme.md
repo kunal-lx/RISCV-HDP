@@ -99,3 +99,9 @@ ALU:
 
 
 ![Alt Text](1B.png) 
+
+
+
+# Simulation using EDAPlayground
+
+![Alt Text](1C.png) 
