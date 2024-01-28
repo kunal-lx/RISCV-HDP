@@ -147,14 +147,18 @@ Spike Output:
  
 
 Number of different instructions: 10
+
+
 List of unique instructions:
-* 		addi
-* 		sw
-* 		lw
-* 		andi
-* 		beq
-* 		ori
-* 		li
-* 		j
-* 		mv 
-* 		ori
+
+1)  addi
+2)  sw
+3)  lw
+4)  andi
+5)  beq
+6)  ori
+7)  li
+8)  j
+9)  mv 
+10) ori
+
