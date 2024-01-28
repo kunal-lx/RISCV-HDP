@@ -104,4 +104,11 @@ ALU:
 
 # Simulation using EDAPlayground
 
+ALU:
+
 ![Alt Text](1C.png) 
+
+
+Counter:
+
+![Alt Text](1D.png) 
