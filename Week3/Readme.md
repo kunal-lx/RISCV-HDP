@@ -98,49 +98,42 @@ Assembly Code:
 ```a
 
 
-.section .text
-.globl _start
-_start:
-    and x30, x30, mask
-    or  x30, x30, buzzer_reg
-    or  x30, x30, led_reg
 
-while_loop:
-    andi t0, x30, 1
-    sw   t0, flag
-    bnez t0, if_block
-    j    while_loop
+out:     file format elf32-littleriscv
 
-if_block:
-    andi t1, x30, 2
-    sw   t1, flame
-    beqz t1, else_block
 
-    li   t2, 0
-    sw   t2, buzzer
-    sw   t2, led
-    j    update_registers
+Disassembly of section .text:
 
-else_block:
-    li   t3, 1
-    sw   t3, buzzer
-    sw   t3, led
-    j    update_registers
+00010054 <main>:
+   10054:	fd010113          	addi	sp,sp,-48
+   10058:	02812623          	sw	s0,44(sp)
+   1005c:	03010413          	addi	s0,sp,48
+   10060:	fec42783          	lw	a5,-20(s0)
+   10064:	00ff6f33          	or	t5,t5,a5
+   10068:	001f7793          	andi	a5,t5,1
+   1006c:	fef42423          	sw	a5,-24(s0)
+   10070:	fec42783          	lw	a5,-20(s0)
+   10074:	02078663          	beqz	a5,100a0 <main+0x4c>
+   10078:	ffd00793          	li	a5,-3
+   1007c:	fef42223          	sw	a5,-28(s0)
+   10080:	00100793          	li	a5,1
+   10084:	fef42023          	sw	a5,-32(s0)
+   10088:	fe442783          	lw	a5,-28(s0)
+   1008c:	00ff7f33          	and	t5,t5,a5
+   10090:	002f6f13          	ori	t5,t5,2
+   10094:	000f0793          	mv	a5,t5
+   10098:	fcf42e23          	sw	a5,-36(s0)
+   1009c:	fc5ff06f          	j	10060 <main+0xc>
+   100a0:	ffd00793          	li	a5,-3
+   100a4:	fef42223          	sw	a5,-28(s0)
+   100a8:	fe042023          	sw	zero,-32(s0)
+   100ac:	fe442783          	lw	a5,-28(s0)
+   100b0:	00ff7f33          	and	t5,t5,a5
+   100b4:	000f6f13          	ori	t5,t5,0
+   100b8:	000f0793          	mv	a5,t5
+   100bc:	fcf42e23          	sw	a5,-36(s0)
+   100c0:	fa1ff06f          	j	10060 <main+0xc>
 
-update_registers:
-    lw   t4, buzzer
-    slli t4, t4, 2
-    sw   t4, buzzer_reg
-
-    lw   t5, led
-    slli t5, t5, 3
-    sw   t5, led_reg
-
-    and  x30, x30, mask
-    or   x30, x30, buzzer_reg
-    or   x30, x30, led_reg
-
-    j    while_loop
 
 ```
 
