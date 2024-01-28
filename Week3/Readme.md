@@ -24,6 +24,13 @@ The main C code (`main.c`) continuously reads the temperature from the sensor an
    riscv32-unknown-elf-gcc -O0 -ggdb -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tmain.ld main.c -o main.elf
 
 
+Design:
+
+
+![Alt Text](1A.png)
+
+
+
 C code:
 
 ```
@@ -138,10 +145,12 @@ Disassembly of section .text:
 ```
 
 
-Design:
+Spike Output:
 
 
-![Alt Text](1A.png) 
+![Alt Text](1D.png)
+
+ 
 
 Functional Simulation:
 
