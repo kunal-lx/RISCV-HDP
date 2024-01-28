@@ -123,7 +123,7 @@ dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib
 
 # Functional Verification
 
-![Alt Text](1A.png)
+![Alt Text](1A.jpeg)
 
 
 
