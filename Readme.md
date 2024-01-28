@@ -40,4 +40,5 @@ This repository is your gateway to mastering RISC-V. Dive into each week's mater
 ## Acknowledgement
 
 Kunal Ghosh, VSD Corp. Pvt. Ltd.
+
 Mayank Kabra, Founder Chipcron Pvt.Ltd
